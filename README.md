@@ -10,3 +10,4 @@ packages.
   - [`python`](https://packages.debian.org/search?suite=stable&keywords=python)
   - [`git`](https://packages.debian.org/search?suite=stable&keywords=git)
   - [`openssh-client`](https://packages.debian.org/search?suite=stable&keywords=openssh-client)
+  - [`sudo`](https://packages.debian.org/search?suite=stable&keywords=sudo)
