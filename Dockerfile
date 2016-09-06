@@ -4,4 +4,6 @@ MAINTAINER VCA Technology <developers@vcatechnology.com>
 # Install useful packages
 RUN apt-get install -y \
   python \
-  git
+  git \
+  openssh-client \
+  sudo
