@@ -1,13 +1,15 @@
-# Debian CI Docker container
+# Debian Docker CI Image
+
+[![](https://images.microbadger.com/badges/image/vcatechnology/debian-ci.svg)](http://microbadger.com/images/vcatechnology/debian-ci "Image Layers") [![](https://images.microbadger.com/badges/version/vcatechnology/debian-ci.svg)](http://microbadger.com/images/vcatechnology/debian-ci "Image Version") [![](https://images.microbadger.com/badges/license/vcatechnology/debian-ci.svg)](https://microbadger.com/images/vcatechnology/debian-ci "Image License")  [![](https://images.microbadger.com/badges/commit/vcatechnology/debian-ci.svg)](https://github.com/vcatechnology/docker-debian-ci "Image Commit")
 
 This container derives from
-[vcatechnology/debian](https://hub.docker.com/r/vcatechnology/debian) which is
-built daily for up-to-date packages. It also includes some useful development
-packages.
+[vcatechnology/debian](https://hub.docker.com/r/vcatechnology/debian) so that the
+image has the latest [Debian](https://www.debian.org/) packages. It then
+installs the some useful development packages.
 
-## Packages
+Available on Docker Hub as [vcatechnology/debian-ci](https://hub.docker.com/r/vcatechnology/debian-ci/)
 
-  - [`python`](https://packages.debian.org/search?suite=stable&keywords=python)
-  - [`git`](https://packages.debian.org/search?suite=stable&keywords=git)
-  - [`openssh-client`](https://packages.debian.org/search?suite=stable&keywords=openssh-client)
-  - [`sudo`](https://packages.debian.org/search?suite=stable&keywords=sudo)
+## `sudo`
+
+The Docker image creates a user account 'build-server' with `sudo` permissions. The `sudo` password
+is disabled to allow non-interactive sudo calls.
